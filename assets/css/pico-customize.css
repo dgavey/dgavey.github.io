@@ -1,0 +1,15 @@
+:root {
+    --pico-font-size: 1rem;
+}
+/* Fix size to 1024 max */
+@media (min-width: 1536px) {
+    .container {
+        max-width: 950px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        max-width: 950px;
+    }
+}
