@@ -1,0 +1,17 @@
+---
+layout: post
+title: Derek's Posts
+---
+
+<main class="container">
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <h3><a href="{{ post.url | relative_url }}">
+          {{ post.title }}
+        </a></h3>
+        <p class="">{{ post.date | date: "%B %d, %Y" }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

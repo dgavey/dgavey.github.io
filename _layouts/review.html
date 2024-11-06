@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.sand.min.css">
+    <link rel="stylesheet" href="{{ "/assets/css/pico-customize.css" | relative_url }}">
+    <style>
+        .responsive-image {
+          max-width: 100%;
+          max-height: 400px;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+      </style>
+</head>
+
+<body class="">
+    <main class="container">
+        {% if page.media %}
+        <article>
+            <h1>{{page.title}}</h1>
+           <img src="{{page.media.image}}" class="responsive-image"/>
+            <p>{{ content }}</p>
+            <a href="https://www.imdb.com/title/{{page.media.imdb}}/">"{{page.media.title}}" on IMDB</a>
+            <footer><small>Watched on: {{page.media.watched}} - Rated: <i>{{page.media.rating}}</i></small></footer>
+        </article>
+        {% else %}  
+            <h1>Movie data not found</h1>
+        {% endif %}
+        <small>Published on: {{ page.date | date: "%B %e, %Y" }}</small>
+    </main>
+    <footer class="container">
+        <nav>
+            <ul>
+                <li><strong>GaveyBlog</strong></li>
+            </ul>
+            <ul>
+                <li><a href="/" class="contrast">Home</a></li>
+                <li><a href="/posts" class="contrast">Posts</a></li>
+                <li><a href="/notes" class="contrast">Notes</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>

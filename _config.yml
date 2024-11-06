@@ -2,6 +2,15 @@ url: 'https://gavey.ca'
 baseurl: ''
 title: 'Gavey.ca'
 
+collections:
+  posts:
+    output: true
+    permalink: /posts/:title/
+  notes:
+    output: true
+    permalink: /notes/:title/
+
+
 plugins:
   - jekyll-postcss
 

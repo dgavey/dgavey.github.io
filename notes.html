@@ -1,0 +1,17 @@
+---
+layout: post
+title: Derek's Notes
+---
+
+<main class="container">
+  <ul>
+    {% for note in site.notes %}
+      <li>
+        <h3><a href="{{ note.url | relative_url }}">
+          {{ note.title }}
+        </a></h3>
+        <p class="secondary">{{ note.date | date: "%B %d, %Y" }}</p>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
