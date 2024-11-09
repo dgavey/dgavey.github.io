@@ -3,4 +3,9 @@ content:
     label: Notes
     path: _notes
     type: collection
+  - name: posts
+    label: Posts
+    path: _posts
+    type: collection
+
 media: assets/images
