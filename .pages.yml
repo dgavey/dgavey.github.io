@@ -3,3 +3,4 @@ content:
     label: Notes
     path: _notes
     type: collection
+media: assets/images
