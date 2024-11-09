@@ -1,3 +1,8 @@
+header h1 {
+    margin-bottom: 0;
+}
+
+
 :root {
     --pico-font-size: 1rem;
 }
@@ -11,5 +16,102 @@
 @media (min-width: 1280px) {
     .container {
         max-width: 950px;
+    }
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    :root:not([data-theme]) {
+      /* Base colors - warm sand-inspired dark theme */
+      --pico-background-color: #1a1816;  /* Dark sand brown */
+      --pico-color: #d5cec7;  /* Light sand */
+      --pico-text-selection-color: rgba(230, 198, 157, 0.1875);
+      --pico-muted-color: #9c958d;  /* Muted sand */
+      --pico-muted-border-color: #2a2622;  /* Darker sand border */
+
+      /* Primary colors - warm golden accent */
+      --pico-primary: #e6c69d;  /* Golden sand */
+      --pico-primary-background: #b39067;  /* Darker golden sand */
+      --pico-primary-border: var(--pico-primary-background);
+      --pico-primary-underline: rgba(230, 198, 157, 0.5);
+      --pico-primary-hover: #f0d4b4;  /* Lighter golden sand */
+      --pico-primary-hover-background: #c4a07c;  /* Slightly darker golden sand */
+      --pico-primary-hover-border: var(--pico-primary-hover-background);
+      --pico-primary-hover-underline: var(--pico-primary-hover);
+      --pico-primary-focus: rgba(230, 198, 157, 0.375);
+      --pico-primary-inverse: #1a1816;
+
+      /* Secondary colors - earthy tones */
+      --pico-secondary: #a39b93;  /* Neutral sand */
+      --pico-secondary-background: #635d57;  /* Darker neutral sand */
+      --pico-secondary-border: var(--pico-secondary-background);
+      --pico-secondary-underline: rgba(163, 155, 147, 0.5);
+      --pico-secondary-hover: #beb5ac;  /* Light neutral sand */
+      --pico-secondary-hover-background: #776f68;  /* Medium neutral sand */
+      --pico-secondary-hover-border: var(--pico-secondary-hover-background);
+      --pico-secondary-hover-underline: var(--pico-secondary-hover);
+      --pico-secondary-focus: rgba(163, 155, 147, 0.25);
+      --pico-secondary-inverse: #fff;
+
+      /* Contrast colors */
+      --pico-contrast: #e8e4e0;  /* Light sand contrast */
+      --pico-contrast-background: #f5f2ef;  /* Lighter sand contrast */
+      --pico-contrast-border: var(--pico-contrast-background);
+      --pico-contrast-underline: rgba(232, 228, 224, 0.5);
+      --pico-contrast-hover: #fff;
+      --pico-contrast-hover-background: #fff;
+      --pico-contrast-hover-border: var(--pico-contrast-hover-background);
+      --pico-contrast-hover-underline: var(--pico-contrast-hover);
+      --pico-contrast-focus: rgba(232, 228, 224, 0.25);
+      --pico-contrast-inverse: #1a1816;
+
+      /* Typography */
+      --pico-h1-color: #f0ebe7;  /* Brightest sand */
+      --pico-h2-color: #e5dfd9;  /* Bright sand */
+      --pico-h3-color: #d5cec7;  /* Medium bright sand */
+      --pico-h4-color: #c5bdb5;  /* Medium sand */
+      --pico-h5-color: #b5aca3;  /* Medium dark sand */
+      --pico-h6-color: #a39b93;  /* Dark sand */
+
+      /* Special elements */
+      --pico-mark-background-color: #634d2e;  /* Dark golden sand */
+      --pico-mark-color: #fff;
+      --pico-ins-color: #7fa594;  /* Sage green */
+      --pico-del-color: #c27c7c;  /* Dusty rose */
+
+      /* Form elements */
+      --pico-form-element-background-color: #211e1b;  /* Slightly lighter than background */
+      --pico-form-element-border-color: #2f2a25;  /* Dark sand border */
+      --pico-form-element-color: #e5dfd9;  /* Light sand text */
+      --pico-form-element-placeholder-color: #8c847c;  /* Muted sand */
+      --pico-form-element-active-background-color: #1a1816;
+      --pico-form-element-active-border-color: var(--pico-primary-border);
+      --pico-form-element-focus-color: var(--pico-primary-border);
+      --pico-form-element-disabled-opacity: 0.5;
+
+      /* Valid/Invalid states */
+      --pico-form-element-invalid-border-color: #96524a;  /* Reddish sand */
+      --pico-form-element-invalid-active-border-color: #b34a3d;
+      --pico-form-element-valid-border-color: #2a7b6f;  /* Greenish sand */
+      --pico-form-element-valid-active-border-color: #16896a;
+
+      /* Component specific */
+      --pico-card-background-color: #211e1b;  /* Slightly lighter than background */
+      --pico-card-border-color: var(--pico-card-background-color);
+      --pico-dropdown-background-color: #211e1b;
+      --pico-dropdown-border-color: #2a2622;
+      --pico-dropdown-hover-background-color: #2a2622;
+      --pico-code-background-color: #3b2f24;
+      --pico-code-color: #a39b93;
+      --pico-card-sectioning-background-color: #2a2622;
+      /* Box shadows */
+      --pico-box-shadow: 0.0145rem 0.029rem 0.174rem rgba(0, 0, 0, 0.01698),
+                        0.0335rem 0.067rem 0.402rem rgba(0, 0, 0, 0.024),
+                        0.0625rem 0.125rem 0.75rem rgba(0, 0, 0, 0.03),
+                        0.1125rem 0.225rem 1.35rem rgba(0, 0, 0, 0.036),
+                        0.2085rem 0.417rem 2.502rem rgba(0, 0, 0, 0.04302),
+                        0.5rem 1rem 6rem rgba(0, 0, 0, 0.06),
+                        0 0 0 0.0625rem rgba(0, 0, 0, 0.015);
+
+      color-scheme: dark;
     }
 }
