@@ -5,7 +5,8 @@ title: Derek's Notes
 
 <main class="container">
   <ul>
-    {% for note in site.notes %}
+    {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
+    {% for note in sorted_notes %}
       <li>
         <h3><a href="{{ note.url | relative_url }}">
           {{ note.title }}
@@ -14,4 +15,4 @@ title: Derek's Notes
       </li>
     {% endfor %}
   </ul>
-</div>
+</main>

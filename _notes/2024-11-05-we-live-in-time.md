@@ -9,6 +9,7 @@ media:
   rating: 4/5
   imdb: tt27131358
   image: /assets/images/shows/we-live-in-time-poster.webp
+  type: movie
 ---
 
 Watched this show in the theater with my girls (wife and daughter).
