@@ -1,0 +1,5 @@
+content:
+  - name: notes
+    label: Notes
+    path: src/_notes
+    type: collection
