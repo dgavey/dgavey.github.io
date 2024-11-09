@@ -1,17 +1,25 @@
 ---
-layout: post
+layout: note
 title: Derek's Notes
 ---
-
 <main class="container">
   <ul>
     {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
     {% for note in sorted_notes %}
       <li>
-        <h3><a href="{{ note.url | relative_url }}">
-          {{ note.title }}
-        </a></h3>
-        <p class="secondary">{{ note.date | date: "%B %d, %Y" }}</p>
+        {% if note.category == "review" %}
+          <h4><a href="{{ note.url | relative_url }}">{{ note.title }}</a></h4>
+          <p class="secondary">{{ note.date | date: "%B %d, %Y" }}</p>
+          <img src="{{ note.media.image | relative_url }}" class="splash-image" alt="{{ note.media.title }}">
+          <div class="note-content">
+            <p>Watched: <br>{{ note.media.watched }}</p>
+            <p>Rating: {{ note.media.rating }}</p>
+            <p>IMDB: <a href="https://www.imdb.com/title/{{ note.media.imdb }}/">{{ note.media.title }}</a></p>
+          </div>
+        {% else %}
+          <h3><a href="{{ note.url | relative_url }}">{{ note.title }}</a></h3>
+          <p class="secondary">{{ note.date | date: "%B %d, %Y" }}</p>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

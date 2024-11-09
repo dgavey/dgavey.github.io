@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}">
+
+<head>
+    <title>{{ page.title }} - {{ site.title }}</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.sand.min.css">
+    <link rel="stylesheet" href="{{ "/assets/css/pico-customize.css" | relative_url }}">
+    <style>
+    .splash-image {
+        max-width: 150px;
+        max-height: 150px;
+        height: auto;
+        display: inline-block;
+        margin-right: 20px;
+        vertical-align: top;
+    }
+    .note-content {
+        display: inline-block;
+        vertical-align: top;
+        max-width: calc(100% - 170px); /* Adjust based on image width and margin */
+    }
+    .note-content p {
+        margin-bottom: 0.5rem;
+    }
+
+    ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+        margin: 0; /* Remove margin */
+    }
+
+    ul li {
+        list-style: none;
+        margin-bottom: 2rem; /* Add some spacing between list items */
+    }
+
+    @media (max-width: 600px) {
+        .note-content p {
+        font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body class="">
+    <main class="container">
+        <article>
+            <header class="pico-background-sand-100">
+                <h1>{{ page.title }}</h1>
+                {% if page.date %}
+                    <small>Published On: {{ page.date | date: "%B %d, %Y" }}</small>
+                {% endif %}
+            </header>
+            <section>
+                {{ content }}
+            </section>
+        </article>
+    </main>
+    <footer class="container">
+        <nav>
+            <ul>
+                <li><strong>GaveyBlog</strong></li>
+            </ul>
+            <ul>
+                <li><a href="/" class="contrast">Home</a></li>
+                <li><a href="/posts" class="contrast">Posts</a></li>
+                <li><a href="/notes" class="contrast">Notes</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+
+</html>
