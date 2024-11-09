@@ -8,7 +8,7 @@ media:
   title: We Live In Time
   rating: 4/5
   imdb: tt27131358
-  image: /assets/images/shows/we-live-in-time-poster.webp
+  image: we-live-in-time-poster.webp
   type: movie
 ---
 

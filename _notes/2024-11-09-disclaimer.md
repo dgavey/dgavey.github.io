@@ -8,7 +8,7 @@ media:
   title: Disclaimer
   rating: 4/5
   imdb: tt16294384
-  image: /assets/images/shows/disclaimer.jpg
+  image: disclaimer.jpg
   type: limited series
 ---
 

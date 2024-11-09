@@ -10,7 +10,7 @@ title: Derek's Notes
         {% if note.category == "review" %}
           <h4><a href="{{ note.url | relative_url }}">{{ note.title }}</a></h4>
           <p class="secondary">{{ note.date | date: "%B %d, %Y" }}</p>
-          <img src="{{ note.media.image | relative_url }}" class="splash-image" alt="{{ note.media.title }}">
+          <img src="/assets/images/shows/thumb{{ note.media.image | relative_url }}" class="splash-image" alt="{{ note.media.title }}">
           <div class="note-content">
             <p>Watched: <br>{{ note.media.watched }}</p>
             <p>Rating: {{ note.media.rating }}</p>
