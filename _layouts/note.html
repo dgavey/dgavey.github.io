@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="{{ site.lang | default: 'en-US' }}" data-theme="dark">
 
 <head>
     <title>{{ page.title }} - {{ site.title }}</title>
@@ -7,6 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.sand.min.css">
     <link rel="stylesheet" href="{{ "/assets/css/pico-customize.css" | relative_url }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Doto:wght@500&display=swap" rel="stylesheet">
     <style>
     .splash-image {
         max-width: 150px;
@@ -40,35 +43,28 @@
         .note-content p {
         font-size: 0.9rem;
         }
+    }
     </style>
 </head>
 
 <body class="">
     <main class="container">
         <article>
-            <header class="pico-background-sand-100">
-                <h1>{{ page.title }}</h1>
+            <header class="pico-background-sand-100">  
+                <h2 class="doto-500">{{ site.title }}</h2>
+            </header>
+            <section>
+                <h3>{{ page.title }}</h3>
                 {% if page.date %}
                     <small>Published On: {{ page.date | date: "%B %d, %Y" }}</small>
                 {% endif %}
-            </header>
+            </section>
             <section>
-                {{ content }}
+                <p>{{ content }}</p>
             </section>
         </article>
     </main>
-    <footer class="container">
-        <nav>
-            <ul>
-                <li><strong>GaveyBlog</strong></li>
-            </ul>
-            <ul>
-                <li><a href="/" class="contrast">Home</a></li>
-                <li><a href="/posts" class="contrast">Posts</a></li>
-                <li><a href="/notes" class="contrast">Notes</a></li>
-            </ul>
-        </nav>
-    </footer>
+    {% include footer.html %}
 </body>
 
 </html>

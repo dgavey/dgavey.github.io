@@ -1,12 +1,13 @@
 ---
 layout: note
-title: Derek's Notes
+title: Recent Notes
 ---
-<main class="container">
   <ul>
     {% assign sorted_notes = site.notes | sort: 'date' | reverse %}
     {% for note in sorted_notes %}
       <li>
+        <hr>
+        <section>
         {% if note.category == "review" %}
           <h4><a href="{{ note.url | relative_url }}">{{ note.title }}</a></h4>
           <p class="secondary">{{ note.date | date: "%B %d, %Y" }}</p>
@@ -20,7 +21,8 @@ title: Derek's Notes
           <h3><a href="{{ note.url | relative_url }}">{{ note.title }}</a></h3>
           <p class="secondary">{{ note.date | date: "%B %d, %Y" }}</p>
         {% endif %}
+        </section>
+       
       </li>
     {% endfor %}
   </ul>
-</main>

@@ -1,7 +1,15 @@
-header h1 {
+header h1,h2 {
     margin-bottom: 0;
 }
 
+.doto-500 {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+      "ROND" 0;
+  }
 
 :root {
     --pico-font-size: 1rem;
@@ -19,14 +27,14 @@ header h1 {
     }
 }
 
-@media only screen and (prefers-color-scheme: dark) {
-    :root:not([data-theme]) {
+[data-theme="dark"] {
+   
       /* Base colors - warm sand-inspired dark theme */
       --pico-background-color: #1a1816;  /* Dark sand brown */
       --pico-color: #d5cec7;  /* Light sand */
       --pico-text-selection-color: rgba(230, 198, 157, 0.1875);
       --pico-muted-color: #9c958d;  /* Muted sand */
-      --pico-muted-border-color: #2a2622;  /* Darker sand border */
+      --pico-muted-border-color: #37322c;  /* Darker sand border */
 
       /* Primary colors - warm golden accent */
       --pico-primary: #e6c69d;  /* Golden sand */
@@ -112,6 +120,5 @@ header h1 {
                         0.5rem 1rem 6rem rgba(0, 0, 0, 0.06),
                         0 0 0 0.0625rem rgba(0, 0, 0, 0.015);
 
-      color-scheme: dark;
-    }
+     
 }
