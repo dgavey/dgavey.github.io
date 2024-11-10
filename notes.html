@@ -8,19 +8,8 @@ title: Recent Notes
       <li>
         <hr>
         <section>
-        {% if note.category == "review" %}
-          <h4><a href="{{ note.url | relative_url }}">{{ note.title }}</a></h4>
-          <p class="secondary">{{ note.date | date: "%B %d, %Y" }}</p>
-          <img src="/assets/images/shows/thumb{{ note.media.image | relative_url }}" class="splash-image" alt="{{ note.media.title }}">
-          <div class="note-content">
-            <p>Watched: <br>{{ note.media.watched }}</p>
-            <p>Rating: {{ note.media.rating }}</p>
-            <p>IMDB: <a href="https://www.imdb.com/title/{{ note.media.imdb }}/">{{ note.media.title }}</a></p>
-          </div>
-        {% else %}
           <h3><a href="{{ note.url | relative_url }}">{{ note.title }}</a></h3>
           <p class="secondary">{{ note.date | date: "%B %d, %Y" }}</p>
-        {% endif %}
         </section>
        
       </li>

@@ -1,0 +1,25 @@
+---
+layout: note
+title: Recent Reviews
+---
+  <ul>
+    {% assign sorted_reviews = site.reviews | sort: 'date' | reverse %}
+    {% for review in sorted_reviews %}
+      <li>
+        <hr>
+        <section>
+
+          <h4><a href="{{ review.url | relative_url }}">{{ review.title }}</a></h4>
+         
+          <img src="/assets/images/shows/thumb{{ review.media.image | relative_url }}" class="splash-image" alt="{{ review.media.title }}">
+          <div class="note-content">
+            <p>Watched: <br>{{ review.media.watched }}</p>
+            <p>Rating: {{ review.media.rating }}</p>
+            <p>IMDB: <a href="https://www.imdb.com/title/{{ review.media.imdb }}/">{{ review.media.title }}</a></p>
+          </div>
+          <p class="u-m-top-05"><small>{{ review.date | date: "%B %d, %Y" }}</small></p>
+        </section>
+       
+      </li>
+    {% endfor %}
+  </ul>

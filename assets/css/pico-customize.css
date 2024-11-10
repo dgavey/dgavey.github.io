@@ -10,6 +10,9 @@ header h1,h2 {
     font-variation-settings:
       "ROND" 0;
   }
+  .u-m-top-05{
+    margin-top: 1rem;
+  }
 
 :root {
     --pico-font-size: 1rem;

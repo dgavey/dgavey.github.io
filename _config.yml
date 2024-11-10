@@ -9,6 +9,9 @@ collections:
   notes:
     output: true
     permalink: /notes/:year/:title/
+  reviews:
+    output: true
+    permalink: /reviews/:year/:title/
 
 future: true
 

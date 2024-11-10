@@ -7,5 +7,10 @@ content:
     label: Posts
     path: _posts
     type: collection
+  - name: reviews
+    label: reviews
+    path: _reviews
+    type: collection
+
 
 media: assets/images
