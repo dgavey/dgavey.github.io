@@ -10,6 +10,7 @@ media:
   imdb: tt27131358
   image: we-live-in-time-poster.webp
   type: movie
+  location: theater
 ---
 
 Watched this show in the theater with my girls (wife and daughter).

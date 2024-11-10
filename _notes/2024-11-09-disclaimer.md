@@ -10,6 +10,7 @@ media:
   imdb: tt16294384
   image: disclaimer.jpg
   type: limited series
+  location: apple
 ---
 
 We watched "Disclaimer," starring Cate Blanchett, Sacha Baron Cohen, and Kevin Kline on Apple TV+. 
