@@ -8,7 +8,7 @@
     <meta property="og:title" content="{{ page.title }} - {{ site.title }}">
     <meta property="og:type" content="article">
     <meta property="og:url" content="{{ page.url | absolute_url }}">
-    <meta property="og:image" content="{{ page.media.image | absolute_url }}">
+    <meta property="og:image" content="{{ '/assets/images/shows/' | append: page.media.image | absolute_url }}">
     <meta property="og:description" content="{{ page.excerpt | strip_html | truncate: 160 }}">
     <meta property="og:site_name" content="{{ site.title }}">
     <meta property="og:locale" content="en_US">
