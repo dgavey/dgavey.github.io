@@ -2,7 +2,7 @@
 <html lang="en-US" data-theme="dark">
 
 <head>
-    <title>Recent Notes - Syntax and Subplots</title>
+    <title>Recording a radio livestream - Syntax and Subplots</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.sand.min.css">
@@ -54,41 +54,31 @@
                 <h2 class="doto-500">Syntax and Subplots</h2>
             </header>
             <section>
-                <h3>Recent Notes</h3>
+                <h3>Recording a radio livestream</h3>
+                
+                    <small>Published On: November 11, 2024</small>
                 
             </section>
             <section>
-                <p>  <ul>
-    
-    
-      <li>
-        <hr>
-        <section>
-          <h3><a href="/notes/2024/youtube-hack/">Youtube IMG_XXXX Hack</a></h3>
-          <p class="secondary">November 11, 2024</p>
-        </section>
-       
-      </li>
-    
-      <li>
-        <hr>
-        <section>
-          <h3><a href="/notes/2024/ckxu-recording/">Recording a radio livestream</a></h3>
-          <p class="secondary">November 11, 2024</p>
-        </section>
-       
-      </li>
-    
-      <li>
-        <hr>
-        <section>
-          <h3><a href="/notes/2024/tauri/">Tauri V2 - Electron Alternative</a></h3>
-          <p class="secondary">November 07, 2024</p>
-        </section>
-       
-      </li>
-    
-  </ul></p>
+                <p><p>I needed to record a livestream of the college radio station where my son now has a program.</p>
+
+<p>I used FFMPEG and the script below in order to do this.  I added a cron job for the time of his program.  I should get them all recorded now when I can’t listen live.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/bin/bash
+
+# Set the input stream URL
+STREAM_URL="https://stream.statsradio.com/8156/stream"
+
+# Get the current date in the format "YYYY-MM-DD"
+RECORDING_DATE=$(date +"%Y-%m-%d")
+
+# Set the output file name
+OUTPUT_FILE="/Users/derek/ckxu/ckxu_recording_$RECORDING_DATE.mp3"
+
+# Record the stream using ffmpeg for 1 hour and 10 minutes
+/opt/homebrew/bin/ffmpeg -i "$STREAM_URL" -t 4200 -c copy "$OUTPUT_FILE"
+</code></pre></div></div>
+</p>
             </section>
         </article>
     </main>
