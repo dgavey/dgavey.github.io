@@ -1,6 +1,6 @@
 ---
 layout: review
-title: "Review: We Live In Time (2024)"
+title: "We Live In Time (2024)"
 date: 2024-11-05 12:00:00 -0700
 category: review
 media: 

@@ -1,6 +1,6 @@
 ---
 layout: review
-title: "Review: Disclaimer (Limted series)"
+title: "Disclaimer (Limted series)"
 date: 2024-11-09 12:00:00 -0700
 category: review
 media: 
