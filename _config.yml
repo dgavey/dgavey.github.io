@@ -22,6 +22,22 @@ plugins:
 postcss:
   cache: false
 
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      author: "Derek Gavey"
+  - scope:
+      path: ""
+      type: "notes"
+    values:
+      author: "Derek Gavey"
+  - scope:
+      path: ""
+      type: "reviews"
+    values:
+      author: "Derek Gavey"
 feed:
   collections:
     - notes
