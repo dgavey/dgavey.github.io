@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.3">Jekyll</generator><link href="https://gavey.ca/feed.xml" rel="self" type="application/atom+xml" /><link href="https://gavey.ca/" rel="alternate" type="text/html" /><updated>2024-11-23T20:56:34+00:00</updated><id>https://gavey.ca/feed.xml</id><title type="html">Syntax and Subplots</title><entry><title type="html">My First Post</title><link href="https://gavey.ca/posts/2024/first-post/" rel="alternate" type="text/html" title="My First Post" /><published>2024-11-01T19:00:00+00:00</published><updated>2024-11-01T19:00:00+00:00</updated><id>https://gavey.ca/posts/2024/first-post</id><content type="html" xml:base="https://gavey.ca/posts/2024/first-post/"><![CDATA[<p>Example formating blog post!</p>
+
+<h1 id="heading-one">Heading one</h1>
+
+<h2 id="heading-2">Heading 2</h2>
+
+<h3 id="heading-3">Heading 3</h3>
+
+<h4 id="heading-4">Heading 4</h4>
+
+<p><strong>Bold text</strong></p>
+
+<p><em>Italic text</em></p>
+
+<p><del>Strikethrough text</del></p>
+
+<p><a href="https://www.google.com">Link to Google</a></p>
+
+<p><img src="/assets/images/rylan-hill-DqGurf90nXw-unsplash.jpg" alt="Sample Image" /></p>
+
+<blockquote>
+  <p>This is a block quote. It is used to highlight important information or quotes.</p>
+</blockquote>
+
+<ul>
+  <li>This is a list</li>
+  <li>Item 2
+    <ul>
+      <li>Nested item 1</li>
+      <li>Nested item 2</li>
+    </ul>
+  </li>
+</ul>
+
+<ol>
+  <li>First ordered item</li>
+  <li>Second ordered item
+    <ol>
+      <li>Nested ordered item 1</li>
+      <li>Nested ordered item 2</li>
+    </ol>
+  </li>
+</ol>
+
+<table>
+  <thead>
+    <tr>
+      <th>Header 1</th>
+      <th>Header 2</th>
+      <th>Header 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Row 1</td>
+      <td>Data 1</td>
+      <td>Data 2</td>
+    </tr>
+    <tr>
+      <td>Row 2</td>
+      <td>Data 3</td>
+      <td>Data 4</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1"># This is a code block
+</span><span class="k">def</span> <span class="nf">hello_world</span><span class="p">():</span>
+    <span class="nf">print</span><span class="p">(</span><span class="sh">"</span><span class="s">Hello, world!</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">Inline code</code></p>
+
+<hr />
+
+<p>Horizontal rule</p>]]></content><author><name></name></author><category term="posts" /><summary type="html"><![CDATA[Example formating blog post!]]></summary></entry></feed>
