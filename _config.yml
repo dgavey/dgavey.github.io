@@ -17,9 +17,15 @@ future: true
 
 plugins:
   - jekyll-postcss
+  - jekyll-feed
 
 postcss:
   cache: false
+
+feed:
+  collections:
+    - notes
+    - reviews
 
 exclude:
   - package.json
