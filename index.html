@@ -43,13 +43,46 @@ title: "Derek Gavey - Personal Page"
           <p class="text-black dark:text-white">About</p>
           <div class="text-neutral-500 dark:text-neutral-400 space-y-3 mt-3">
             <p>
-              Been coding websites since the Spice Girls had a #1 hit. <br />
-              <i class="mt-3 inline-block"
-                >So tell me you what you want, what you really really want.</i
-              >
+              Been coding websites since <fact-rotator>1997</fact-rotator>.<br />
             </p>
           </div>
         </div>
+
+        <script>
+          customElements.define('fact-rotator', class extends HTMLElement {
+            #facts = [
+              "the Spice Girls had a #1 hit",
+              "Titanic premiered and became the highest-grossing film of all time",
+              "the first Harry Potter book was published",
+              "the Spice Girls released their debut album 'Spice'",
+              "Elton John re-released 'Candle in the Wind' in tribute to Princess Diana",
+              "the first DVD players were released in North America",
+              "IBM's Deep Blue defeated world chess champion Garry Kasparov",
+              "the domain name Google.com was registered",
+              "Wi-Fi was introduced to the public",
+              "Hong Kong was handed over to China from British rule",
+              "the Kyoto Protocol was adopted",
+              "Mother Teresa passed away",
+              "Tiger Woods won his first Masters Tournament",
+              "Michael Jordan led the Chicago Bulls to their fifth NBA Championship",
+              "Mike Tyson bit Evander Holyfield's ear during a boxing match",
+              "the first successful cloning of a mammal, Dolly the sheep, was announced",
+              "NASA's Pathfinder mission landed on Mars",
+              "the first genetically modified food, a tomato called Flavr Savr, was approved for sale",
+              "the Hale-Bopp comet made its closest approach to Earth",
+              "Apple Inc. acquired NeXT, bringing Steve Jobs back to the company",
+              "Amazon.com went public",
+              "the Tamagotchi digital pet became a global craze",
+              "the first book in the 'Chicken Soup for the Soul' series was published",
+              "the first Grand Theft Auto video game was released",
+            ];
+
+            connectedCallback() {
+              const randomFact = this.#facts[Math.floor(Math.random() * this.#facts.length)];
+              this.textContent = randomFact;
+            }
+          });
+        </script>
       </div>
     </div>
   </div>
